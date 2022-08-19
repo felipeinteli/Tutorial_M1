@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 411.0
+margin_top = 310.0
+margin_right = 712.0
+margin_bottom = 407.0
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 71.0
+margin_top = 41.0
+margin_right = 289.0
+margin_bottom = 119.0
+text = "Exercicío 1: Aperte aqui"
+
+[node name="Exerc 1" type="Label" parent="."]
+margin_left = 526.0
+margin_top = 41.0
+margin_right = 786.0
+margin_bottom = 104.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 52.0
+margin_top = 320.0
+margin_right = 360.0
+margin_bottom = 401.0
+text = "Exercicio 3:Aperte aqui para escreve na matriz"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 720.0
+margin_top = 325.0
+margin_right = 1001.0
+margin_bottom = 395.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 58.0
+margin_top = 173.0
+margin_right = 304.0
+margin_bottom = 256.0
+text = "Exercicio 2: Aperte aqui funcao texto"
+
+[node name="texto3" type="Label" parent="."]
+margin_left = 416.0
+margin_top = 178.0
+margin_right = 691.0
+margin_bottom = 257.0
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 66.0
+margin_top = 464.0
+margin_right = 271.0
+margin_bottom = 555.0
+text = "Exercicios 4: Aperte aqui"
+
+[node name="valor4" type="Label" parent="."]
+margin_left = 771.0
+margin_top = 420.0
+margin_right = 959.0
+margin_bottom = 508.0
+
+[node name="texteditvalor" type="TextEdit" parent="."]
+margin_left = 413.0
+margin_top = 469.0
+margin_right = 683.0
+margin_bottom = 563.0
+text = "Exercicio 4: Digite aqui seu valor"
+
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
