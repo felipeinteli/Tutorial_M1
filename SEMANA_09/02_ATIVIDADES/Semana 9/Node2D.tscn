@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 328.0
+margin_top = 132.0
+margin_right = 566.0
+margin_bottom = 192.0
+text = "Aperte Aqui"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 324.0
+margin_top = 63.0
+margin_right = 563.0
+margin_bottom = 116.0
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
